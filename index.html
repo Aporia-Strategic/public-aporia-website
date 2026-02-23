@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aporia Strategic | Purpose-Built Practice Management for SA Financial Advisors</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Aporia Strategic builds purpose-built practice management tools for South African independent financial advisors. Lighten the administrative burden across new business, servicing, reviews, and closures.">
+    <meta name="keywords"
+        content="financial advisor software, South Africa, practice management, FSP CRM, financial planning tools, independent financial advisor, FAIS, FICA, compliance tools, advisory platform">
+    <meta name="author" content="Alex Myburgh">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aporiastrategic.co.za/">
+
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aporiastrategic.co.za/">
+    <meta property="og:title" content="Aporia Strategic | Break the Impasse">
+    <meta property="og:description"
+        content="Purpose-built practice management for South African independent financial advisors. Built by a practising advisor, for advisors.">
+    <meta property="og:image" content="https://aporiastrategic.co.za/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:site_name" content="Aporia Strategic">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Aporia Strategic | Break the Impasse">
+    <meta name="twitter:description"
+        content="Purpose-built practice management for South African independent financial advisors. Built by a practising advisor, for advisors.">
+    <meta name="twitter:image" content="https://aporiastrategic.co.za/og-image.png">
+
+    <!-- Favicon & Touch Icons -->
+    <link rel="icon" type="image/png" href="03_Logomarks_Favicons/Logomark_Full_Colour.png">
+    <link rel="apple-touch-icon" href="03_Logomarks_Favicons/Logomark_Full_Colour.png">
+
+    <!-- Theme Color (mobile browser address bar) -->
+    <meta name="theme-color" content="#301934">
+    <meta name="msapplication-TileColor" content="#301934">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,300..900;1,6..12,300..900&family=Oswald:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aporiaPurple: '#301934',
+                        aporiaBlack: '#000000',
+                        aporiaDarkGrey: '#333333',
+                        aporiaMidGrey: '#848484',
+                    },
+                    fontFamily: {
+                        oswald: ['Oswald', 'sans-serif'],
+                        dosis: ['Dosis', 'sans-serif'],
+                        nunito: ['Nunito Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, #301934 0%, #000000 70%);
+        }
+
+        .roadmap-card {
+            background: linear-gradient(145deg, #1f1f1f 0%, #0a0a0a 100%);
+            border: 1px solid rgba(48, 25, 52, 0.5);
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-aporiaBlack text-white font-nunito selection:bg-aporiaPurple selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="03_Logomarks_Favicons/Logomark_Full_Colour.png" alt="Aporia Strategic" class="h-12 w-auto">
+            </div>
+
+            <div class="hidden md:flex items-center gap-8 font-dosis font-semibold uppercase tracking-wider">
+                <a href="#problem" class="hover:text-aporiaPurple transition-colors">The Problem</a>
+                <a href="#founder" class="hover:text-aporiaPurple transition-colors">The Founder</a>
+                <a href="#solution" class="hover:text-aporiaPurple transition-colors">Our Toolset</a>
+                <a href="#roadmap" class="hover:text-aporiaPurple transition-colors">Roadmap</a>
+                <a href="#contact" class="bg-aporiaPurple px-6 py-2 rounded-sm hover:bg-opacity-80 transition-all">Get
+                    in Touch</a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="md:hidden text-white" onclick="toggleMenu()">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-aporiaBlack border-b border-aporiaDarkGrey px-6 py-8 flex flex-col gap-6 font-dosis uppercase font-bold tracking-widest">
+            <a href="#problem" onclick="toggleMenu()">The Problem</a>
+            <a href="#founder" onclick="toggleMenu()">The Founder</a>
+            <a href="#solution" onclick="toggleMenu()">Our Toolset</a>
+            <a href="#roadmap" onclick="toggleMenu()">Roadmap</a>
+            <a href="#contact" class="text-aporiaPurple" onclick="toggleMenu()">Get in Touch</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-8">
+                <h1 class="font-oswald text-5xl md:text-7xl font-bold uppercase leading-tight">
+                    Break the <span class="text-aporiaPurple">Impasse.</span>
+                </h1>
+                <!-- Hero tagline -->
+                <p class="text-xl md:text-2xl text-aporiaMidGrey font-dosis max-w-lg leading-relaxed">
+                    Aporia — /əˈpɔːrɪə/ — the point where the old way forward no longer works. We build the tools that
+                    lead independent advisors forward.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="mailto:alex@aporiastrategic.co.za"
+                        class="bg-aporiaPurple text-center font-oswald text-lg uppercase tracking-widest py-4 px-10 rounded-sm hover:scale-105 transition-transform">
+                        Get in Touch
+                    </a>
+                    <a href="#solution"
+                        class="border border-aporiaMidGrey text-center font-oswald text-lg uppercase tracking-widest py-4 px-10 rounded-sm hover:bg-white hover:text-black transition-all">
+                        Explore the Toolset
+                    </a>
+                </div>
+                <div class="flex items-center gap-3 pt-4">
+                    <span class="material-symbols-outlined text-white">verified_user</span>
+                    <p class="text-sm font-dosis uppercase tracking-widest text-aporiaMidGrey">Built by Practitioners,
+                        for Practitioners</p>
+                </div>
+            </div>
+            <div class="hidden md:block relative w-full max-w-md ml-auto">
+                <!-- Abstract UI Representation: Iteration 1 (The Unified Profile) -->
+                <div class="relative scale-[1.15] right-4">
+                    <div
+                        class="relative bg-aporiaDarkGrey/30 border border-white/10 rounded-xl p-6 shadow-2xl backdrop-blur-sm">
+                        <!-- Header area -->
+                        <div class="flex items-center gap-4 border-b border-white/10 pb-4 mb-4">
+                            <div class="h-12 w-12 rounded-full bg-aporiaPurple/50 flex items-center justify-center">
+                                <span class="material-symbols-outlined text-white">person</span>
+                            </div>
+                            <div class="space-y-2 flex-1">
+                                <div class="h-3 w-32 bg-white/20 rounded"></div>
+                                <div class="h-2 w-24 bg-white/10 rounded"></div>
+                            </div>
+                            <div
+                                class="h-6 w-16 bg-green-500/20 text-green-400 text-[10px] font-bold rounded flex items-center justify-center border border-green-500/30">
+                                ACTIVE</div>
+                        </div>
+
+                        <!-- Data Grid -->
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-aporiaBlack/40 rounded p-3 border border-white/5 relative overflow-hidden">
+                                <div class="h-2 w-16 bg-white/10 rounded mb-3"></div>
+                                <div class="h-4 w-24 bg-white/30 rounded"></div>
+                                <span
+                                    class="material-symbols-outlined absolute right-2 bottom-2 text-white/10 text-4xl">account_balance</span>
+                            </div>
+                            <div class="bg-aporiaBlack/40 rounded p-3 border border-white/5 relative overflow-hidden">
+                                <div class="h-2 w-16 bg-white/10 rounded mb-3"></div>
+                                <div class="h-4 w-20 bg-white/30 rounded"></div>
+                                <span
+                                    class="material-symbols-outlined absolute right-2 bottom-2 text-white/10 text-4xl">description</span>
+                            </div>
+                        </div>
+
+                        <!-- Pipeline stage -->
+                        <div class="mt-4 bg-aporiaPurple/10 border border-aporiaPurple/30 rounded p-4">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="h-2 w-24 bg-aporiaPurple/50 rounded"></div>
+                                <div class="h-2 w-8 bg-white/20 rounded"></div>
+                            </div>
+                            <div class="w-full bg-aporiaBlack rounded-full h-1.5">
+                                <div class="bg-aporiaPurple h-1.5 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Decoration element behind -->
+                    <div
+                        class="absolute -top-6 -right-6 h-24 w-24 bg-aporiaPurple/20 rounded-lg border border-aporiaPurple/30 -z-10 blur-sm rotate-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section id="problem" class="py-24 bg-[#111111] text-white border-t border-aporiaPurple/20">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-6">The Administrative Debt</h2>
+                <div class="h-1 w-24 bg-aporiaPurple mx-auto mb-8"></div>
+                <p class="max-w-3xl mx-auto text-xl font-dosis text-aporiaMidGrey">
+                    Independent advisors are drowning in administration, copying data between platforms, and filling out
+                    the same forms over and over. You didn't start your practice to manage paperwork.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="p-8 border-l-4 border-aporiaPurple bg-[#1a1a1a]">
+                    <span class="material-symbols-outlined text-4xl mb-4 text-white">sync_problem</span>
+                    <h3 class="font-oswald text-2xl uppercase mb-4">Manual Data Work</h3>
+                    <p class="text-aporiaMidGrey leading-relaxed">Every manual copy-paste is a system failure.
+                        Transferring client info between platforms consumes hours that belong to your clients.</p>
+                </div>
+                <div class="p-8 border-l-4 border-aporiaPurple bg-[#1a1a1a]">
+                    <span class="material-symbols-outlined text-4xl mb-4 text-white">groups</span>
+                    <h3 class="font-oswald text-2xl uppercase mb-4">Brute-Force Staffing</h3>
+                    <p class="text-aporiaMidGrey leading-relaxed">Hiring more admin staff to handle broken processes
+                        increases overhead without addressing the root cause: broken systems.</p>
+                </div>
+                <div class="p-8 border-l-4 border-aporiaPurple bg-[#1a1a1a]">
+                    <span class="material-symbols-outlined text-4xl mb-4 text-white">layers_clear</span>
+                    <h3 class="font-oswald text-2xl uppercase mb-4">Generic Software</h3>
+                    <p class="text-aporiaMidGrey leading-relaxed">Most CRMs are built for sales pipelines or enterprise
+                        IT. They ignore the daily reality of the independent advisor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Founder Section — Manifesto -->
+    <section id="founder" class="py-24 bg-aporiaBlack border-t border-aporiaPurple/20 relative overflow-hidden">
+        <!-- Background photo, very subtle -->
+        <div class="absolute inset-0 opacity-[0.06]">
+            <img src="alex_myburgh.jpg" alt="" class="w-full h-full object-cover object-top grayscale">
+        </div>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <!-- Identity bar -->
+            <div
+                class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-16 pb-8 border-b border-aporiaPurple/30">
+                <img src="alex_myburgh.jpg" alt="Alex Myburgh"
+                    class="h-24 w-24 rounded-full object-cover object-top border-2 border-aporiaPurple grayscale flex-shrink-0">
+                <div>
+                    <h2 class="font-oswald text-3xl md:text-4xl uppercase">Alex Myburgh</h2>
+                    <p class="font-dosis text-aporiaMidGrey uppercase tracking-wider text-sm">Founder & Lead Systems
+                        Architect ·
+                        Practising Financial Advisor · 10+ Years in SA Financial Services</p>
+                </div>
+            </div>
+
+            <!-- Statement blocks -->
+            <div class="space-y-16">
+                <!-- Statement 1 -->
+                <div class="grid md:grid-cols-12 gap-8 items-baseline">
+                    <div class="md:col-span-4">
+                        <span class="font-oswald text-6xl text-aporiaPurple/30">01</span>
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-oswald text-2xl uppercase mb-4">A decade on the ground.</h3>
+                        <p class="text-aporiaMidGrey leading-relaxed">
+                            I've spent over ten years as a financial advisor in South Africa — four at a large insurer,
+                            six-plus in the independent space. In that time, the regulatory landscape has only grown
+                            heavier. FICA, FAIS, TCF, the upcoming COFI Bill — each layer adding more administrative
+                            weight. And with every change, the tools we rely on feel more like static snapshots —
+                            updated
+                            when you see a client, then forgotten until the next review. The gap between how advice
+                            <em>should</em> work and how our systems <em>actually</em> work keeps widening.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Statement 2 -->
+                <div class="grid md:grid-cols-12 gap-8 items-baseline">
+                    <div class="md:col-span-4">
+                        <span class="font-oswald text-6xl text-aporiaPurple/30">02</span>
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-oswald text-2xl uppercase mb-4">The gap I couldn't unsee.</h3>
+                        <p class="text-aporiaMidGrey leading-relaxed">
+                            I've used the systems available in the independent space. They work. But they've
+                            always felt like they come from one of two angles — either built to drive sales, or built
+                            to tick compliance boxes. Neither starts from the question that matters most to me:
+                            <em>how do we lighten the administrative burden so the advisor can focus on the client?</em>
+                        </p>
+                        <p class="text-aporiaMidGrey leading-relaxed mt-4">
+                            When I started out, I was genuinely excited when a client wanted to proceed. Now? You almost
+                            shrug — because you know what comes next. The mountain of paperwork, the back-and-forth,
+                            the admin that turns a single case into days of processing. That's what this system is
+                            designed to address. Not just new business, but the full lifecycle — onboarding, servicing,
+                            reviews, closures — with the advisor and client connected throughout, not just at
+                            touchpoints.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Statement 3 -->
+                <div class="grid md:grid-cols-12 gap-8 items-baseline">
+                    <div class="md:col-span-4">
+                        <span class="font-oswald text-6xl text-aporiaPurple/30">03</span>
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-oswald text-2xl uppercase mb-4">I think in systems. So I'm building one.</h3>
+                        <p class="text-aporiaMidGrey leading-relaxed">
+                            The best financial advice comes from a holistic view — seeing a client's full picture, not
+                            just isolated products. I believe the same is true for the tools we use. That's why I'm
+                            building a purpose-built advisory practice platform — an interconnected ecosystem, not a
+                            collection of features. Right now, it's an early-stage system — a working beta that I use
+                            daily in my own practice to validate the architecture and test what's possible. It has
+                            rough edges and plenty still to build. But the foundation is there, the workflows are
+                            real, and every iteration is shaped by what actually happens at the desk. It's being
+                            built up from where it is — not polished from the top down.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Niche callout -->
+                <div class="bg-aporiaPurple/10 border border-aporiaPurple/30 p-8 rounded-sm flex items-start gap-6">
+                    <span class="material-symbols-outlined text-aporiaPurple text-3xl flex-shrink-0 mt-1">flag</span>
+                    <div>
+                        <h4 class="font-oswald text-xl uppercase mb-2">Purpose-Built, Not Retrofitted</h4>
+                        <p class="text-sm text-aporiaMidGrey leading-relaxed">
+                            This isn't a generic CRM bent into shape for financial services. General-purpose
+                            project and CRM platforms are powerful, but they're exactly that — general-purpose. You
+                            spend more time configuring them than using them. This system is built from scratch for the
+                            South African independent financial advisor: our regulatory landscape, our provider
+                            integrations, our market realities. Every workflow, every field, every calculation exists
+                            because a practising advisor needed it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution Section -->
+    <section id="solution" class="py-24 bg-aporiaBlack">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-8 leading-tight">
+                        Built from the <span class="text-aporiaPurple">Inside.</span>
+                    </h2>
+                    <p class="text-lg text-aporiaMidGrey mb-8 leading-relaxed">
+                        Aporia Strategic was founded by a practising financial advisor. We don't guess what you need; we
+                        live your frustrations. Every tool we build is tested in a live practice before it reaches
+                        yours.
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-white">check_circle</span>
+                            <div>
+                                <h4 class="font-bold text-white uppercase">Workflow-First Design</h4>
+                                <p class="text-sm text-aporiaMidGrey">Optimised for what you actually do after a client
+                                    meeting.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-white">check_circle</span>
+                            <div>
+                                <h4 class="font-bold text-white uppercase">Centralise Once, Use Everywhere</h4>
+                                <p class="text-sm text-aporiaMidGrey">Data flows automatically to forms, calculators,
+                                    and reports.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <span class="material-symbols-outlined text-white">check_circle</span>
+                            <div>
+                                <h4 class="font-bold text-white uppercase">Deterministic Tools</h4>
+                                <p class="text-sm text-aporiaMidGrey">Reliable, predictable outputs for your
+                                    professional reputation.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-1 gap-6">
+                    <div class="bg-aporiaDarkGrey p-8 rounded-sm">
+                        <h3 class="font-oswald text-xl uppercase mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-white">database</span> CRM Foundation
+                        </h3>
+                        <p class="text-sm text-aporiaMidGrey">Purpose-built client data management running on the
+                            infrastructure you already trust (Google Workspace).</p>
+                    </div>
+                    <div class="bg-aporiaDarkGrey p-8 rounded-sm">
+                        <h3 class="font-oswald text-xl uppercase mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-white">edit_document</span> Automated Forms
+                        </h3>
+                        <p class="text-sm text-aporiaMidGrey">Auto-populate multiple product provider forms from a
+                            single data source.</p>
+                    </div>
+                    <div class="bg-aporiaDarkGrey p-8 rounded-sm">
+                        <h3 class="font-oswald text-xl uppercase mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-white">calculate</span> Financial Calculators
+                        </h3>
+                        <p class="text-sm text-aporiaMidGrey">Built-in, verified calculators for risk, investment, and
+                            insurance scenarios.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AI Philosophy — Future Vision -->
+            <div class="mt-24 pt-16 border-t border-aporiaPurple/20">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <p class="font-dosis text-aporiaPurple uppercase tracking-widest text-sm mb-4">Stage 3 Vision
+                        </p>
+                        <h3 class="font-oswald text-3xl md:text-4xl uppercase mb-6 leading-tight">
+                            Where We're Headed: <span class="text-aporiaPurple">AI.</span>
+                        </h3>
+                        <p class="text-lg text-aporiaMidGrey leading-relaxed">
+                            Today, the platform runs on solid, deterministic tools — no AI is involved yet. But the
+                            architecture is being designed with a clear long-term direction: once the foundation is
+                            proven, let AI orchestrate it.
+                        </p>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-white mt-1">build</span>
+                            <div>
+                                <h4 class="font-bold text-white uppercase">Tools First, AI Second</h4>
+                                <p class="text-sm text-aporiaMidGrey">Every tool must work flawlessly on its own before
+                                    AI enters the picture. We're building that foundation now — stable, predictable,
+                                    and deterministic.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-white mt-1">account_tree</span>
+                            <div>
+                                <h4 class="font-bold text-white uppercase">AI as Orchestrator</h4>
+                                <p class="text-sm text-aporiaMidGrey">The future vision: AI decides which tools to use —
+                                    it doesn't do the data work. The result would be deterministic outputs you can stake
+                                    your professional reputation on.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-white mt-1">cloud</span>
+                            <div>
+                                <h4 class="font-bold text-white uppercase">GCP-Backed Vision</h4>
+                                <p class="text-sm text-aporiaMidGrey">The end goal is a Google Cloud Platform backend
+                                    powering intelligent agentic workflows — an AI assistant that delegates to
+                                    proven, verified tools. That's the Stage 3 ambition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshot Carousel Section -->
+    <section id="screenshots" class="py-24 bg-[#0a0a0a] border-t border-aporiaPurple/20">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-6">See It In Action</h2>
+                <p class="font-dosis text-xl text-aporiaMidGrey">Real screenshots from the working beta — built and
+                    tested in a live advisory practice.</p>
+            </div>
+
+            <!-- Carousel Container -->
+            <div class="relative group">
+                <!-- Slides -->
+                <div class="overflow-hidden rounded-sm border border-aporiaPurple/30">
+                    <div id="carouselTrack" class="flex transition-transform duration-500 ease-in-out">
+                        <!-- Slide 1 -->
+                        <div class="w-full flex-shrink-0">
+                            <img src="screenshots/client_overview.png" alt="Client Overview Dashboard"
+                                class="w-full h-auto">
+                            <div class="bg-aporiaBlack p-4 text-center">
+                                <p class="font-oswald text-lg uppercase tracking-wider">Client Overview</p>
+                                <p class="font-dosis text-sm text-aporiaMidGrey">Financial summary, communications, and
+                                    banking details at a glance.</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="w-full flex-shrink-0">
+                            <img src="screenshots/task_dashboard.png" alt="Task Dashboard" class="w-full h-auto">
+                            <div class="bg-aporiaBlack p-4 text-center">
+                                <p class="font-oswald text-lg uppercase tracking-wider">Task Dashboard</p>
+                                <p class="font-dosis text-sm text-aporiaMidGrey">Track priorities, filter by status, and
+                                    manage your advisory workflow.</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="w-full flex-shrink-0">
+                            <img src="screenshots/financial_calculators_menu.png" alt="Financial Calculators Menu"
+                                class="w-full h-auto">
+                            <div class="bg-aporiaBlack p-4 text-center">
+                                <p class="font-oswald text-lg uppercase tracking-wider">Financial Calculators</p>
+                                <p class="font-dosis text-sm text-aporiaMidGrey">Risk, investment, business, trust, and
+                                    tax calculators — all built in.</p>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="w-full flex-shrink-0">
+                            <img src="screenshots/template_variables.png" alt="Template Variables System"
+                                class="w-full h-auto">
+                            <div class="bg-aporiaBlack p-4 text-center">
+                                <p class="font-oswald text-lg uppercase tracking-wider">Document Automation</p>
+                                <p class="font-dosis text-sm text-aporiaMidGrey">Template variables auto-populate client
+                                    data into any document.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button onclick="moveCarousel(-1)"
+                    class="absolute left-4 top-1/2 -translate-y-1/2 bg-aporiaBlack/80 hover:bg-aporiaPurple text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-all z-10">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+                <button onclick="moveCarousel(1)"
+                    class="absolute right-4 top-1/2 -translate-y-1/2 bg-aporiaBlack/80 hover:bg-aporiaPurple text-white p-3 rounded-full opacity-0 group-hover:opacity-100 transition-all z-10">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+
+            <!-- Dot Indicators -->
+            <div class="flex justify-center gap-3 mt-6">
+                <button onclick="goToSlide(0)" class="carousel-dot h-2 w-8 rounded-full bg-aporiaPurple transition-all"
+                    data-index="0"></button>
+                <button onclick="goToSlide(1)"
+                    class="carousel-dot h-2 w-8 rounded-full bg-aporiaMidGrey/30 transition-all"
+                    data-index="1"></button>
+                <button onclick="goToSlide(2)"
+                    class="carousel-dot h-2 w-8 rounded-full bg-aporiaMidGrey/30 transition-all"
+                    data-index="2"></button>
+                <button onclick="goToSlide(3)"
+                    class="carousel-dot h-2 w-8 rounded-full bg-aporiaMidGrey/30 transition-all"
+                    data-index="3"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="py-24 bg-[#0a0a0a]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-oswald text-4xl md:text-5xl uppercase mb-6">Our Staged Evolution</h2>
+                <p class="font-dosis text-xl text-aporiaMidGrey">Pragmatic progression from CRM to Intelligent
+                    Orchestration.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Stage 1 -->
+                <div class="roadmap-card p-10 relative overflow-hidden group">
+                    <div
+                        class="absolute top-0 right-0 bg-aporiaPurple text-[10px] font-bold px-4 py-1 uppercase tracking-widest">
+                        Live</div>
+                    <span class="text-white font-oswald text-5xl opacity-10 block mb-4">01</span>
+                    <h3 class="font-oswald text-2xl uppercase mb-6">CRM Foundation</h3>
+                    <ul class="text-sm text-aporiaMidGrey space-y-3 font-dosis">
+                        <li>• Google Workspace Integration</li>
+                        <li>• Centralised Client Management</li>
+                        <li>• Template Document Generation</li>
+                        <li>• Core Financial Calculators</li>
+                    </ul>
+                </div>
+                <!-- Stage 2 -->
+                <div class="roadmap-card p-10 relative overflow-hidden group border-opacity-20">
+                    <span class="text-white font-oswald text-5xl opacity-10 block mb-4">02</span>
+                    <h3 class="font-oswald text-2xl uppercase mb-6 text-white/80">Standalone Platform</h3>
+                    <ul class="text-sm text-white/40 space-y-3 font-dosis">
+                        <li>• Dedicated Web Application (GCP)</li>
+                        <li>• API Integrations with Providers</li>
+                        <li>• Enhanced UI/UX Performance</li>
+                        <li>• Multi-tenant Architecture</li>
+                    </ul>
+                </div>
+                <!-- Stage 3 -->
+                <div class="roadmap-card p-10 relative overflow-hidden group border-opacity-10">
+                    <span class="text-white font-oswald text-5xl opacity-10 block mb-4">03</span>
+                    <h3 class="font-oswald text-2xl uppercase mb-6 text-white/60">Intelligent Orchestration</h3>
+                    <ul class="text-sm text-white/20 space-y-3 font-dosis">
+                        <li>• AI Workflow Orchestrator</li>
+                        <li>• Delegated Sub-Agent Tasks</li>
+                        <li>• Human-in-the-Loop Review</li>
+                        <li>• Zero-PII AI Processing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-24 bg-aporiaPurple text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="font-oswald text-4xl md:text-6xl uppercase mb-8">Let's Talk</h2>
+            <p class="text-xl font-dosis mb-12 opacity-90">Whether you're an advisor curious about the toolset, or you'd
+                like to learn more about our vision — reach out.</p>
+
+            <a href="mailto:alex@aporiastrategic.co.za"
+                class="inline-flex items-center gap-3 bg-white text-aporiaBlack font-oswald text-xl uppercase tracking-widest py-5 px-14 hover:bg-aporiaBlack hover:text-white transition-all group">
+                <span class="material-symbols-outlined text-2xl">mail</span>
+                alex@aporiastrategic.co.za
+            </a>
+        </div>
+
+        <div class="mt-24 mb-[-3rem] text-center">
+            <p class="font-oswald uppercase font-bold text-3xl md:text-5xl text-black/40 mb-2">Strength in Vision,</p>
+            <p class="font-oswald uppercase font-bold text-3xl md:text-5xl text-black/40">Power in Purpose.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-aporiaBlack border-t border-aporiaDarkGrey">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3">
+                <img src="03_Logomarks_Favicons/Logomark_Full_Colour.png" alt="Aporia Strategic"
+                    class="h-14 w-auto opacity-70 hover:opacity-100 transition-opacity">
+            </div>
+
+            <p class="font-dosis text-aporiaMidGrey uppercase tracking-tighter text-sm">
+                © 2026 Aporia Strategic. Strength in Vision, Power in Purpose.
+            </p>
+
+            <div class="flex gap-6 text-aporiaMidGrey">
+                <a href="mailto:alex@aporiastrategic.co.za" class="hover:text-white transition-colors">
+                    <span class="material-symbols-outlined">mail</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+        }
+
+        // Screenshot Carousel
+        let currentSlide = 0;
+        const totalSlides = 4;
+        const track = document.getElementById('carouselTrack');
+        const dots = document.querySelectorAll('.carousel-dot');
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('bg-aporiaPurple', i === currentSlide);
+                dot.classList.toggle('bg-aporiaMidGrey/30', i !== currentSlide);
+            });
+        }
+
+        function moveCarousel(dir) {
+            currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        // Auto-advance every 5 seconds, pause on hover
+        let autoPlay = setInterval(() => moveCarousel(1), 5000);
+        const carouselContainer = document.querySelector('#screenshots .relative');
+        if (carouselContainer) {
+            carouselContainer.addEventListener('mouseenter', () => clearInterval(autoPlay));
+            carouselContainer.addEventListener('mouseleave', () => {
+                autoPlay = setInterval(() => moveCarousel(1), 5000);
+            });
+        }
+    </script>
+</body>
+
+</html>
